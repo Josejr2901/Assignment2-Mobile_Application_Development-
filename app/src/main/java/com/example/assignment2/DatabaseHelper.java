@@ -49,6 +49,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 {"Pickering", "43.8505", "-79.0832"},
                 {"Scarborough", "43.7705", "-79.2578"},
                 {"Downtown Toronto", "43.65107", "-79.347015"},
+                {"Downtown Toronto", "43.65107", "-79.347015"},
                 {"Mississauga", "43.5890", "-79.6441"},
                 {"Brampton", "43.7315", "-79.7626"},
                 {"Markham", "43.8668", "-79.2666"},
