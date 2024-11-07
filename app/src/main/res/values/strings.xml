@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assignment 2</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="enter_latitude">Enter Latitude</string>
+    <string name="enter_longitude">Enter Longitude</string>
+    <string name="add_location">Add Location</string>
+    <string name="update_location">Update Location</string>
+    <string name="delete_location">Delete Location</string>
+    <string name="query_location">Query Location</string>
+    <string name="result_placeholder">Results will appear here</string>
+</resources>

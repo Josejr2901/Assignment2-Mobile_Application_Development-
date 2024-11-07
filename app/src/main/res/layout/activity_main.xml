@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar displaying the title of the screen -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4F6367"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="LocationFinder"
+        app:titleTextColor="#FFFFFF" />
+
+    <!-- Main content layout for entering and interacting with location data -->
+    <LinearLayout
+        android:layout_width="377dp"
+        android:layout_height="620dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarHomePage">
+
+        <!-- Input field for address -->
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address"
+            android:minHeight="48dp" />
+
+        <!-- Input field for latitude -->
+        <EditText
+            android:id="@+id/etLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Latitude"
+            android:minHeight="48dp" />
+
+        <!-- Input field for longitude -->
+        <EditText
+            android:id="@+id/etLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Longitude"
+            android:minHeight="48dp" />
+
+        <!-- Button to add a new location -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6750A4"
+            android:text="Add Location"
+            android:textColor="#FFFFFF" />
+
+        <!-- Button to update an existing location -->
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6750A4"
+            android:text="Update Location"
+            android:textColor="#FFFFFF" />
+
+        <!-- Button to delete a location -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6750A4"
+            android:text="Delete Location"
+            android:textColor="#FFFFFF" />
+
+        <!-- Button to query a location -->
+        <Button
+            android:id="@+id/btnQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6750A4"
+            android:text="Query Location"
+            android:textColor="#FFFFFF" />
+
+        <!-- TextView to display the result of the location query -->
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
